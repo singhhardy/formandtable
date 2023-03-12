@@ -26,6 +26,7 @@ function Formsheet() {
         <div className="container">
           <textarea className="rounded"></textarea>
         </div>
+        <h4>OR</h4>
       </div>
       <div  className="form-body-2">
         <input className="form-control" type="file" id="formFile"></input>

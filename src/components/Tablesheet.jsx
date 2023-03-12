@@ -8,22 +8,24 @@ function Tablesheet() {
     console.log(tableData)
 
   return (
+    
     <div className="container-1 rounded">
-      <table className="rounded">
+    <h2 className="table-heading">Order Table</h2>
+      <table className="table rounded">
       <thead>
       <tr className="rounded">
-          <th>Heading 1</th>
-          <th>Heading 2</th>
-          <th>Heading 3</th>
-          <th>Heading 4</th>
-          <th>Heading 5</th>
+          <th scope="col">S. No.</th>
+          <th scope="col">Heading 2</th>
+          <th scope="col">Heading 3</th>
+          <th scope="col">Heading 4</th>
+          <th scope="col">Heading 5</th>
         </tr>
       </thead>
       <tbody>
       {
         tableData.map((item) => (
         <tr key={item.id}>
-          <td>{item.col1}</td>
+          <td scope="row">{item.id}</td>
           <td>{item.col2}</td>
           <td>{item.col3}</td>
           <td>{item.col4}</td>
@@ -32,7 +34,6 @@ function Tablesheet() {
 
         ))
     }
-
       </tbody>
       </table>
     </div>
